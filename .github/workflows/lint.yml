@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run ESLint
-        run: npm run lint 
+      - name: Run ESLint and show suggestions
+        run: npx eslint . || exit 1
